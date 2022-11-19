@@ -8,7 +8,6 @@ class Solution {
             count = nums[i] + count;
             sum[i] = count;
         }
-        
         return sum;
         
     }
