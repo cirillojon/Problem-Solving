@@ -20,8 +20,10 @@ class Solution {
     HashSet<Integer> set = new HashSet<Integer>();
 
     for(int i = 0; i < nums.size(); i++)
+    {
         if(!set.add(map.get(nums.get(i))))
             return false;
+    }
     
         return true;
     }
