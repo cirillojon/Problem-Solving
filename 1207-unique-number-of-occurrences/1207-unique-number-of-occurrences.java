@@ -12,6 +12,7 @@ class Solution {
             nums.add(arr[i]);
         }
         
+
         else
         map.put(arr[i],map.get(arr[i])+1);
 
@@ -24,7 +25,11 @@ class Solution {
         if(!set.add(map.get(nums.get(i))))
             return false;
     }
+        
+
     
+      
+
         return true;
     }
 }
