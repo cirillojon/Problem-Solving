@@ -13,24 +13,16 @@ class Solution {
         ListNode node = head; ListNode root = head;
         ArrayList<Integer> odd = new ArrayList<Integer>();
         ArrayList<Integer> even = new ArrayList<Integer>();
-        int i = 1;
+        int index = 1;
         while(root != null){
-            if( i % 2 == 0)
-            even.add(root.val);
-            
-            else
-            odd.add(root.val);
-        
-            i++; root = root.next;
+            if( index % 2 == 0) even.add(root.val);
+            else odd.add(root.val);
+            index++; root = root.next;
         }
 
-        for(int j = 0; j < (i-1); j++){
-            if(j < odd.size())
-            node.val = odd.get(j);
-            
-            else
-            node.val = even.get(j-odd.size());
-
+        for(int j = 0; j < (index-1); j++){
+            if(j < odd.size()) node.val = odd.get(j);
+            else node.val = even.get(j-odd.size());
             node = node.next;
         }
         return head;
