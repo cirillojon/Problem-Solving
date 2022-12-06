@@ -24,17 +24,13 @@ class Solution {
             i++; root = root.next;
         }
 
-        int count = 0;
         for(int j = 0; j < (i-1); j++){
-            if(j < odd.size()){
-                node.val = odd.get(j);
-                System.out.println(odd.get(j));
-            }
-            else{
-                node.val = even.get(count);
-                System.out.println(even.get(count));
-                count++;
-            }
+            if(j < odd.size())
+            node.val = odd.get(j);
+            
+            else
+            node.val = even.get(j-odd.size());
+
             node = node.next;
         }
         return head;
