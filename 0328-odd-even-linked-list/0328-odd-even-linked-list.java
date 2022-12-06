@@ -10,20 +10,19 @@
  */
 class Solution {
     public ListNode oddEvenList(ListNode head) {
-        ListNode node = head; ListNode root = head;
+        ListNode root = head; int index = 1;
         ArrayList<Integer> odd = new ArrayList<Integer>();
         ArrayList<Integer> even = new ArrayList<Integer>();
-        int index = 1;
         while(root != null){
             if( index % 2 == 0) even.add(root.val);
             else odd.add(root.val);
             index++; root = root.next;
         }
-
+        root = head;
         for(int j = 0; j < (index-1); j++){
-            if(j < odd.size()) node.val = odd.get(j);
-            else node.val = even.get(j-odd.size());
-            node = node.next;
+            if(j < odd.size()) root.val = odd.get(j);
+            else root.val = even.get(j-odd.size());
+            root = root.next;
         }
         return head;
     }
