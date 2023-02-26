@@ -14,7 +14,6 @@ class Solution {
 
         int[] res = new int[(String.valueOf(num)).length()]; // Create a new integer array called res with a length equal to the length of the string representation of the BigInteger object num
 
-
         for(int i = 0; i < res.length; i++) // Loop through each element of the res array
             res[i] = Integer.parseInt(String.valueOf((String.valueOf(num)).charAt(i)), 10) ; // Parse the character at the current index of the string representation of the BigInteger object num as an integer and store it in the current element of the res array
         
