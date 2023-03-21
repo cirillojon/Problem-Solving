@@ -5,18 +5,13 @@ class Solution {
         for(int i = 0; i < nums.length; i++)
         {
             if(nums[i] == 0 && bool == true)
-            { 
-                // count++;
-                // res = res + count;
-                
                 res += ++count;
-            }
             
             if(nums[i] == 0 && bool == false)
             {            
                 count = 1;
                 bool = true;
-                res = res + count;
+                res++;
             }
             
             if(nums[i] != 0)
