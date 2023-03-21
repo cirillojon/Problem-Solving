@@ -6,8 +6,10 @@ class Solution {
         {
             if(nums[i] == 0 && bool == true)
             { 
-                count++;
-                res = res + count;
+                // count++;
+                // res = res + count;
+                
+                res += ++count;
             }
             
             if(nums[i] == 0 && bool == false)
