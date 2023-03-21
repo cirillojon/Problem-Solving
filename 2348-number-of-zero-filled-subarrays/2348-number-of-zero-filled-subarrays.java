@@ -9,9 +9,7 @@ class Solution {
             
             if(nums[i] == 0 && bool == false)
             {            
-                count = 1;
-                bool = true;
-                res++;
+                count = 1; bool = true; res++;
             }
             
             if(nums[i] != 0)
