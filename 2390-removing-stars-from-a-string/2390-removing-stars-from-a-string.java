@@ -1,8 +1,9 @@
 class Solution {
     public String removeStars(String s) {
 
-        ArrayList<Integer> indexes  = new ArrayList<Integer>();
-        StringBuilder res = new StringBuilder(); int starCount = 0;
+        //ArrayList<Integer> indexes  = new ArrayList<Integer>();
+        StringBuilder res = new StringBuilder(); 
+        int starCount = 0;
 
         for(int i = (s.length()-1); i >= 0; i--)
         {
@@ -14,7 +15,7 @@ class Solution {
             if(s.charAt(i) != '*' && starCount > 0)
             {
                 starCount--;
-                indexes.add(i);
+                //indexes.add(i);
             }
             else
                 res.append(s.charAt(i));
