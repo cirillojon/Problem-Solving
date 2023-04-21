@@ -1,6 +1,5 @@
 class Solution {
     public int reverse(int x) {
-        
         Stack<Integer> s = new Stack<Integer>();
         boolean neg = false; String str = String.valueOf(x);
         if(str.length() == 1) return x; int res = 0;
