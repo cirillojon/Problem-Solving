@@ -1,15 +1,15 @@
 class Solution {
     public int[] productExceptSelf(int[] nums) {
-        int[] a1 = new int[nums.length]; int[] a2 = new int[nums.length];
-        a1[0] = nums[0]; a2[nums.length-1] = nums[nums.length-1];
+        int[] from_start = new int[nums.length]; 
+        int[] from_end = new int[nums.length];
+        from_start[0] = nums[0]; from_end[nums.length-1] = nums[nums.length-1];
         for(int i = 0; i < nums.length-1; i++){
-           a1[i+1] = a1[i] * nums[i+1];
-           a2[nums.length-2-i] = a2[nums.length-1-i] * nums[nums.length-2-i]; 
-        }
+           from_start[i+1] = from_start[i] * nums[i+1];
+           from_end[nums.length-2-i] = from_end[nums.length-1-i] * nums[nums.length-2-i];}
         for(int i = 0; i < nums.length; i++){
-            if(i == 0) {nums[i] = a2[1]; continue;}
-            if(i == nums.length-1) {nums[i] = a1[nums.length-2]; continue;}
-            nums[i] = a1[i-1] * a2[i+1];
+            if(i == 0) {nums[i] = from_end[1]; continue;}
+            if(i == nums.length-1) {nums[i] = from_start[nums.length-2]; continue;}
+            nums[i] = from_start[i-1] * from_end[i+1];
         } return nums;
     }
 }
