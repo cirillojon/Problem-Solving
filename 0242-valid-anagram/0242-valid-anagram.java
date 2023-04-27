@@ -5,6 +5,6 @@ class Solution {
         //Sort each array
         Arrays.sort(arr1); Arrays.sort(arr2);
         //If the words are anagrams, they will be equal after sorting
-        if(Arrays.equals(arr1,arr2)) return true; return false;        
+        return(Arrays.equals(arr1,arr2));  
     }
 }
