@@ -26,8 +26,7 @@ class Solution {
             }
             
 
-            if(flag == false) 
-                res[i] = -1;
+            if(!flag) res[i] = -1;
             
             count = 0; 
             flag = false;
