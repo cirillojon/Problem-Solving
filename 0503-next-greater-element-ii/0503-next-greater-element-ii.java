@@ -13,7 +13,9 @@ class Solution {
             
             // Loop circularly until either we have searched all numbers (except start) or found larger 
             while(count != nums.length-1 && flag == false){
-                if(index == nums.length) index = 0; // Wrap around to start
+                
+                // Wrap around to start if reached end of array
+                if(index == nums.length) index = 0; 
                 
                 // If larger number is found, assign it to res[i]
                 if(nums[index] > nums[i]){
@@ -25,11 +27,11 @@ class Solution {
                 index++; count++;
             }
             
-
+            // If no larger values found
             if(!flag) res[i] = -1;
             
-            count = 0; 
-            flag = false;
+            // Reset variables 
+            count = 0; flag = false;
         }
         return res;
     }
