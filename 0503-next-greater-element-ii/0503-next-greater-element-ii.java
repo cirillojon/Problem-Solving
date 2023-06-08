@@ -3,8 +3,7 @@ class Solution {
         
         // Initialize variables
         int[] res = new int[nums.length];
-        int index = 0; 
-        int count = 0;
+        int index = 0; int count = 0;
         boolean flag = false; 
         
         // Loop through each element
