@@ -5,7 +5,7 @@ My first real hard :)
 This map will contain the correct counts for given words[i] in the concatenated string containing each word. This will be important later when checking if potential substrings of s are composed correctly.
 
 For example, for the second test case, the 'master' map will return as:
-```{best=1, good=1, word=2}```. If there is a substring that looks valdi because it is of correct length and contains valid words, it could trick our algorithm if we did not check for the amount of words in the given substring
+```{best=1, good=1, word=2}```. If there is a substring that looks valid because it is of correct length and contains valid words, it could trick our algorithm if we did not check for the amount of words in the given substring
 
 ## Step 2 : Check potential substrings
 Firstly, we use this loop: ```for(int i = 0; i <= s.length() - len; i++) ```
