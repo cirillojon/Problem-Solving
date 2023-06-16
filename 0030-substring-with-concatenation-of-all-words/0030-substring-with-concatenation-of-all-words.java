@@ -19,9 +19,8 @@ class Solution {
     public boolean is_valid(String s, String[] words, Map<String, Integer> cache){
          Map<String, Integer> map = new HashMap<>();
          int len = words[0].length(); int limit = s.length() - len;
-         for(int i = 0; i <= limit; i += len){
-            String temp = s.substring(i, len + i);
-            map.merge(temp, 1, Integer::sum);
-        } return map.equals(cache);
+         for(int i = 0; i <= limit; i += len)
+            map.merge(s.substring(i, len + i), 1, Integer::sum);
+       return map.equals(cache);
     }
 }
