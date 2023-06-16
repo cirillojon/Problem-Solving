@@ -6,7 +6,7 @@ class Solution {
         // Create map filled with words and their count
         for(int i = 0; i < words.length; i++){
             if(!cache.containsKey(words[i])) cache.put(words[i], 1); 
-			else cache.put(words[i], cache.get(words[i])+1); 
+	    else cache.put(words[i], cache.get(words[i])+1); 
         }
 
         // Length of 'Substring with Concatenation of All Words'
