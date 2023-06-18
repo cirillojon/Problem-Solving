@@ -1,5 +1,4 @@
-class Solution { // Define a class called "Solution"
-    
+class Solution { 
     // Method to get all permutations of the input array nums
     public List<List<Integer>> permute(int[] nums) { 
         // Initialize an empty list to hold all permutations
