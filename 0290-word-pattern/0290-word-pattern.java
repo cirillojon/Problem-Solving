@@ -11,7 +11,7 @@ class Solution {
                 if(i+1 == s.length()) word.append(s.charAt(i));  
                 if(map.containsKey(pattern.charAt(index))){
                     if(map.get(pattern.charAt(index)).equals(String.valueOf(word))){
-                       res.append(pattern.charAt(index));  word.setLength(0); index++; continue;
+                       res.append(pattern.charAt(index)); word.setLength(0); index++; continue;
                    } else return false;
                 } map.put(pattern.charAt(index), String.valueOf(word)); 
                 if(!set.add(String.valueOf(word))) return false;
