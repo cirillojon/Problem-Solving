@@ -20,4 +20,3 @@ class Solution:
                 if cache[i] > res:
                     res = cache[i]
         return res
-            
