@@ -3,7 +3,6 @@ class Solution:
         cache = {0:1}
         val = nums[0]
         res = 1
-        
         for i in range(len(nums)):
             if nums[i] > val:
                 res += 1
