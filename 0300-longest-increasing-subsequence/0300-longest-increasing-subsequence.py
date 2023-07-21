@@ -9,8 +9,7 @@ class Solution:
                 cache[i] = res
                 val = nums[i]
             else:
-                temp_val = 0
-                sub_list = list(nums[:i])
+                temp_val = 0                
                 for n in range(i-1, -1, -1):
                     if nums[i] > nums[n] and n in cache:
                         if cache[n] > temp_val:
