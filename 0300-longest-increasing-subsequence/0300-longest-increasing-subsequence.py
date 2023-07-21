@@ -2,11 +2,11 @@ class Solution:
     def lengthOfLIS(self, nums: List[int]) -> int:
         cache = {0:1}
         val = nums[0]
-        count = 1
+        res = 1
         for i in range(len(nums)):
             if nums[i] > val:
-                count += 1
-                cache[i] = count
+                res += 1
+                cache[i] = res
                 val = nums[i]
             else:
                 temp_val = 0
@@ -17,7 +17,7 @@ class Solution:
                             if cache[n] > temp_val:
                                 temp_val = cache[n]
                 cache[i] = temp_val + 1
-                if cache[i] > count:
-                    count = cache[i]
-        return count
+                if cache[i] > res:
+                    res = cache[i]
+        return res
             
