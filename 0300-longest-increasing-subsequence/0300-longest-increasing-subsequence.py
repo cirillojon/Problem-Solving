@@ -11,11 +11,10 @@ class Solution:
             else:
                 temp_val = 0
                 sub_list = list(nums[:i])
-                for n in range(len(sub_list), -1, -1):
-                    if nums[i] > nums[n]:
-                        if n in cache:
-                            if cache[n] > temp_val:
-                                temp_val = cache[n]
+                for n in range(i-1, -1, -1):
+                    if nums[i] > nums[n] and n in cache:
+                        if cache[n] > temp_val:
+                             temp_val = cache[n]
                 cache[i] = temp_val + 1
                 if cache[i] > res:
                     res = cache[i]
