@@ -9,14 +9,14 @@ class Solution:
                 cache[i] = count
                 val = nums[i]
             else:
-                x = 0
-                temp = list(nums[:i])
-                for n in range(len(temp), -1, -1):
+                temp_val = 0
+                sub_list = list(nums[:i])
+                for n in range(len(sub_list), -1, -1):
                     if nums[i] > nums[n]:
                         if n in cache:
-                            if cache[n] > x:
-                                x = cache[n]
-                cache[i] = x + 1
+                            if cache[n] > temp_val:
+                                temp_val = cache[n]
+                cache[i] = temp_val + 1
                 if cache[i] > count:
                     count = cache[i]
         return count
