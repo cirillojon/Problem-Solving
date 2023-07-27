@@ -1,6 +1,6 @@
 class Solution:
     def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
-
+        
         one = {n : nums1.count(n) for n in nums1}
         two = {n : nums2.count(n) for n in nums2}
         res = []
