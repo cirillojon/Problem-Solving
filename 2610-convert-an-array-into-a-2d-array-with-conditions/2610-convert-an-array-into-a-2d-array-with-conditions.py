@@ -5,9 +5,9 @@ class Solution:
         for n in nums:
             for s in res:
                 if n not in s:
-                    s.append(n)
+                    s.add(n)
                     break
             else:
-                res.append(([n]))
+                res.append(set([n]))
                 
         return res
