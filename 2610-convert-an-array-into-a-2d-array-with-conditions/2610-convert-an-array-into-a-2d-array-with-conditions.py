@@ -8,7 +8,6 @@ class Solution:
                     s.add(n)
                     break
             else:
-                res.append(set())
-                res[-1].add(n) 
+                res.append(set([n]))
                 
         return res
