@@ -7,9 +7,8 @@ class MyQueue:
         self.q.append(x)
 
     def pop(self) -> int:
-        if not self.empty():
-            return self.q.pop(0)
-        return -1
+        return self.q.pop(0)
+
 
     def peek(self) -> int:
         return self.q[0]
