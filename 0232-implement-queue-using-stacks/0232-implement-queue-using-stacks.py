@@ -12,9 +12,8 @@ class MyQueue:
         return -1
 
     def peek(self) -> int:
-        if not self.empty():
-            return self.q[0]
-        return -1
+        return self.q[0]
+
 
     def empty(self) -> bool:
         if len(self.q) == 0:
