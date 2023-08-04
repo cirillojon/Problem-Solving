@@ -8,9 +8,7 @@ class Solution:
             val = temp.pop(0)
             for i in range(len(nums)):
                 if nums[i] > 0:
-                    nums[i] -= val
-                
+                    nums[i] -= val   
             res += 1
-            print(nums)
             
         return res
