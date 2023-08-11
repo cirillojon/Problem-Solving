@@ -14,4 +14,4 @@ class Solution:
             elif len(stack) == 0 or stack.pop() != st:
                 return False
             
-        return True if len(stack) == 0 else False
+        return not stack
