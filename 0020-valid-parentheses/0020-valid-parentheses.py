@@ -2,7 +2,6 @@ class Solution:
     def isValid(self, s: str) -> bool:
         
         stack = []
-        
         for st in s:
             if st == '(':
                 stack.append(')')
@@ -10,7 +9,6 @@ class Solution:
                 stack.append(']')
             elif st == '{':
                 stack.append('}')
-                
             elif len(stack) == 0 or stack.pop() != st:
                 return False
             
