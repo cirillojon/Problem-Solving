@@ -14,4 +14,4 @@ class Solution:
             else:
                 for i in range(0, len(map[k]), k):
                     res.append(map[k][i:i+k])
-        return sorted(res, key = lambda x : len(x))
+        return res
