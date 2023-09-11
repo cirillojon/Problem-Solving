@@ -8,7 +8,7 @@ class Solution:
             else:
                 size_map[size].append(i)
         
-        for size, size_list in size_map.items():
+        for size in size_map:
             if len(size_map[size]) == size:
                 res.append(size_map[size])
             else:
