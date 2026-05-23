@@ -6,10 +6,19 @@ Created Using [LeetHub](https://github.com/QasimWani/LeetHub)
 ## Array
 |  |
 | ------- |
+| [3047-find-the-largest-area-of-square-inside-two-rectangles](https://github.com/cirillojon/Problem-Solving/tree/master/3047-find-the-largest-area-of-square-inside-two-rectangles) |
 | [3461-find-the-minimum-area-to-cover-all-ones-i](https://github.com/cirillojon/Problem-Solving/tree/master/3461-find-the-minimum-area-to-cover-all-ones-i) |
 | [3685-count-subarrays-of-length-three-with-a-condition](https://github.com/cirillojon/Problem-Solving/tree/master/3685-count-subarrays-of-length-three-with-a-condition) |
 ## Matrix
 |  |
 | ------- |
 | [3461-find-the-minimum-area-to-cover-all-ones-i](https://github.com/cirillojon/Problem-Solving/tree/master/3461-find-the-minimum-area-to-cover-all-ones-i) |
+## Math
+|  |
+| ------- |
+| [3047-find-the-largest-area-of-square-inside-two-rectangles](https://github.com/cirillojon/Problem-Solving/tree/master/3047-find-the-largest-area-of-square-inside-two-rectangles) |
+## Geometry
+|  |
+| ------- |
+| [3047-find-the-largest-area-of-square-inside-two-rectangles](https://github.com/cirillojon/Problem-Solving/tree/master/3047-find-the-largest-area-of-square-inside-two-rectangles) |
 <!---LeetCode Topics End-->
