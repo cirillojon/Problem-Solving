@@ -21,4 +21,12 @@ Created Using [LeetHub](https://github.com/QasimWani/LeetHub)
 |  |
 | ------- |
 | [3047-find-the-largest-area-of-square-inside-two-rectangles](https://github.com/cirillojon/Problem-Solving/tree/master/3047-find-the-largest-area-of-square-inside-two-rectangles) |
+## Hash Table
+|  |
+| ------- |
+| [3120-count-the-number-of-special-characters-i](https://github.com/cirillojon/Problem-Solving/tree/master/3120-count-the-number-of-special-characters-i) |
+## String
+|  |
+| ------- |
+| [3120-count-the-number-of-special-characters-i](https://github.com/cirillojon/Problem-Solving/tree/master/3120-count-the-number-of-special-characters-i) |
 <!---LeetCode Topics End-->
