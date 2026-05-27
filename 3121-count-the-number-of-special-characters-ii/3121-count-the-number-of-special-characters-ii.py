@@ -12,5 +12,4 @@ class Solution:
             if w.upper() in first_indices.keys() and w.lower() in first_indices.keys():
                 if first_indices[w.lower()] < first_indices[w.upper()]:
                     res_set.add(w.lower())
-        print(res_set)
         return len(res_set)
