@@ -7,8 +7,8 @@ class Solution:
                 continue
             else:
                 indices[c] = i
-        for w in word:
-            if w.upper() in indices.keys() and w.lower() in indices.keys():
-                if indices[w.lower()] < indices[w.upper()]:
-                    res_set.add(w.lower())
+        for k in indices.keys():
+            if k.upper() in indices.keys() and k.lower() in indices.keys():
+                if indices[k.lower()] < indices[k.upper()]:
+                    res_set.add(k.lower())
         return len(res_set)
